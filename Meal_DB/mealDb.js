@@ -1,6 +1,4 @@
 
-
-
 function getData(displayFunction, firstLetter){
     
     var xhr = new XMLHttpRequest();
@@ -32,13 +30,23 @@ var printData = function(input){
     var div = document.getElementById('display')
     div.innerHTML = ""
 
-    for( var i = 0; i < input.meals.length; i++ ) {
-        var para = document.createElement('p')
-        para.innerText = input.meals[i].strMeal
+    var h3 = document.createElement('h3')
+    h3.innerText = "Choose the recipe of your choice"
 
-        console.log(input.meals[i].strMeal)
-        div.append(para)
+    div.append(h3)
+
+    for( var i = 0; i < input.meals.length; i++ ) {
+
+        if( i === 0 ) {
+            var select = document.createElement('select')
+        }
+        var option = document.createElement('option')
+        option.innerText = input.meals[i].strMeal
+        //console.log(option)
+        //console.log(input.meals[i].strMeal)
+        select.append(option)
     }
+    div.append(select)
     body.append(div)
 }
 
