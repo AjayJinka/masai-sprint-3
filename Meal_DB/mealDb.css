@@ -5,6 +5,17 @@
     text-align: center;
     padding: 20px;
     color: skyblue;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+input {
+    margin-right: 20px;
+    width: 40px;
 }
 
 
