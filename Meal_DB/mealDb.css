@@ -4,7 +4,7 @@
     height: 90px;
     text-align: center;
     padding: 20px;
-    color: skyblue;
+    color: rgb(3,3,58);
     margin-bottom: 20px;
 }
 
@@ -16,4 +16,41 @@ label {
 input {
     margin-right: 20px;
     width: 40px;
+}
+
+#dropDown {
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+
+
+
+#cont1 {
+    float: left;
+    margin-right: 0px;
+    margin-top: 5%;
+    height: 300px;
+}
+#cont2 {
+    float: right;
+    margin-top: 3%;
+    margin-right: 40%;
+    
+
+}
+#cont3 {
+    clear: both;
+    padding: 30px;
+    margin-bottom: 20px;
+    ;
+}
+#cont4 {
+    padding: 30px;
+    ;
+}
+
+#cont0 {
+    width: 1000px;
+    padding: 5px;
+    ;
 }
